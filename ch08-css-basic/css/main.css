@@ -1,0 +1,29 @@
+h2{
+    color: orange;
+    background-color: green;
+    font-size: 26px;
+}
+
+#a{
+    color: palevioletred;
+}
+
+.b{
+    font-size: 50px;
+    color: rgb(54, 1, 201);
+}
+
+p.c{
+    font-size: 60px;
+    color: black;
+}
+h2.c{
+    color: lime;
+}
+
+p.a.b{color: gold; background-color: black;}
+
+
+div.box h2{
+    background-color: gray;
+}
