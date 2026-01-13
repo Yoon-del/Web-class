@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: "풀무원";
+    src: url("../font/AdobeFnt23.lst");
+    font-weight: 400;
+}
+
+
+
+.banner{
+    border: 1px solid blue;
+    width: 1920px;
+    height:250px;
+    margin:0
+    background: aquamarine url(./img/sub_vis01_02.jpg) no-repeat 0% 0% /contavin;
+    background-attachment: fixed;
+}
+
+.b{
+    border: 1px solid red;
+    width: 1200px;
+    height: 30px;
+    margin: 50px 360px 100px 360px;
+    font-size: 30px;
+}
+
+.c{
+    border: 1px solid green;
+    with:1200px
+    height: 139px;
+    margin: 0px 360px 50px 360px;
+    padding: 0px 70px 0px 70px;
+ 
+}
+
+.d{
+    border: 1px solid salmon;
+    width: 630px;
+    height:80px ;
+    margin:auto;
+}
+
+.content{
+    margin:auto
+    
+
+    padding: 810px 554px;
+}
+
+.content #p1{
+    border: 1px solid rgb(97, 19, 97);
+    width: auto;
+    height: auto;
+
+        
+}
+
+.content #p2{
+    border: 1px solid rgb(97, 19, 97);
+   
+        
+}
