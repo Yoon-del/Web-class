@@ -4,6 +4,38 @@
 }
 
 .box{background-color: rgb(194, 194, 194);}
+.box1{
+    border: 1px solid black;
+    width: 800px;
+    display:flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.box div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box2{
+    border: 1px solid black;
+    width: 800px;
+    display:flex;
+}
+
+.box2 div{
+    width: 100px;
+    height: 100px;
+ }
+
+ .box2 .a{order:2;}
+ .box2 .b{order:4;}
+ .box2 .c{order:1;}
+ .box2 .d{order:5;}
+ .box2 .e{odrer:3;}
+
 
 .box3{
     border: 1px solid black;
