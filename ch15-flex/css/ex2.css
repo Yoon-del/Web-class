@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-.box{background-color: rgb(194, 194, 194);}
+.box{
+    background-color: rgb(194, 194, 194);
+    margin: 300px;
+}
 .box1{
     border: 1px solid black;
     width: 800px;
@@ -13,9 +16,9 @@
 }
 
 .box div{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    
+   
+    
     box-sizing: border-box;
 }
 
@@ -87,3 +90,189 @@
     box-sizing: border-box;
 }
 
+
+.box5{
+    display:flex;
+    border: 1px solid black;
+    width: 800px;
+    height: 300px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items:flex-end; 
+}
+
+.box5 div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.box6{
+    display:flex;
+    width: 800px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.box6 div{
+    width: 400px;
+    height: 100px;
+}
+
+
+.box7{
+    width: 800px;
+    height: 300px;
+    background-color: glay;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box7 div{
+    width: 100px;
+    height: 100px;
+}
+
+
+.box8{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box8 div{
+    width: 100px;
+    height: 100px;
+}
+.box8-1 {
+    display: flex;
+}
+
+.box8-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.box9{
+    width: 800px;
+    height: 300px;
+    display:flex;
+}
+
+.box9-1{
+    width: 500px;
+    display: flex;
+}
+.box9-1 div{
+    flex:1;
+}
+
+.box9-2 div{
+    width: 300px;
+    height: 100px;
+}
+
+
+.box10{
+    width: 800px;
+    height: 300px;
+    display: flex;   
+}
+
+.box10 section{
+    border: 1px solid red;
+}
+
+.box10-1 {
+    width: 250px;
+
+}
+
+.box10-2{
+    width: 300px;
+    height: 100px;
+}
+
+.box10-3{
+    width: 250px;
+}
+
+.box10 .c{
+    height: 100px;
+}
+
+.box10-2-1{
+    display: flex;    
+}
+
+.box10-2-1 div{
+    flex:1;
+    height: 200px;
+}
+
+.box11{
+    /* border: 1px solid black; */
+    width: 800px;
+    height: 300px;
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+}
+
+.box11 section{
+    /* border: 1px solid red; */
+    width: 200px;
+}
+.box11-1 div{
+    height: 100px;    
+}
+
+.box11-2{
+    /* border: 1px solid blue; */
+    /* width: 550px; */
+    display: flex;
+    justify-content: center;
+    align-items:center;   
+}
+
+.box11-2 div{
+  
+    width: 100px;
+    height: 100px;
+}
+
+.box11-3{
+   height: 300px;
+}
+
+.box11-3 div{
+    /* border: 1px solid red; */
+   height:100%;
+}
+
+
+.box12{
+    width: 800px;
+    height: 300px;
+    justify-content: center;
+    align-items:center;  
+    display: flex; 
+}
+
+.box12 .e{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+.box12 .e div{
+    width: 100px;
+    height: 100px;
+}
+    
