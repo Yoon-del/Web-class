@@ -1,0 +1,277 @@
+*{margin: 0;
+padding: 0;}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    margin: 500px auto;
+}
+
+.a{ background-color: red;}
+.b{   background-color: green; }
+.c{background-color: blue;}
+.d{background-color: yellow;}
+.e{background-color: pink;}
+
+.ex1{
+    position: relative;
+}
+
+.ex1>div{
+    width: 100px;
+    height: 100px; 
+    position: absolute;    
+}
+
+
+.ex1 .a{
+    background-color: red;    
+    left: 0;
+    top: 0;
+}
+
+.ex1 .b{
+    background-color: green;    
+    left: 0;
+    bottom: 0;
+}
+
+.ex1 .c{
+    background-color: blue;
+    left:calc(50% - 50px);
+    top:calc(50% - 50px);   
+}
+
+.ex1 .d{
+    background-color: yellow;
+    right: 0;
+    top: 0;
+
+}
+.ex1 .e{
+    background-color: pink;
+    right: 0;
+    bottom: 0;
+}
+
+
+.ex2{
+    position: relative;
+}
+
+.ex2>div{
+    width: 100px;
+    height: 100px; 
+    position: absolute;    
+}
+
+
+.ex2 .a{
+    background-color: red;    
+    top:-100px;
+    left: -100px;
+}
+
+.ex2 .b{
+    background-color: green;    
+    left:-100px;
+    bottom: -100px;
+}
+
+.ex2 .c{
+    background-color: blue;
+    left:calc(50% - 50px);
+    bottom: -100px;
+}
+
+.ex2 .d{
+    background-color: yellow;
+    right:-100px;
+    top: -100px;
+
+}
+.ex2 .e{
+    background-color: pink;
+    right: -100px;
+    bottom: -100px;
+}
+
+
+.ex3{
+    position: relative;
+}
+
+.ex3 div{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+} 
+
+
+.ex3 .a{
+    background-color: red;    
+    top:-100%;
+}
+
+.ex3 .b{
+    background-color: green;    
+    bottom: -100%;
+    left: 20%;
+}
+
+.ex3 .c{
+    background-color: blue;
+    left: 40%;
+    top: -100%;
+}
+
+.ex3 .d{
+    background-color: yellow;
+    bottom: -100%;
+    left: 60%;
+
+}
+.ex3 .e{
+    background-color: pink;
+    left: 80%;
+    top:-100%;
+}
+
+
+
+.ex4{
+    position: relative;
+}
+
+.ex4>div{
+    position: absolute;    
+}
+
+
+.ex4 .a{
+    background-color: red;
+    width: 300px;
+    height:300px; 
+    top: -150px;    
+    left: 0; 
+    position: absolute;
+}
+
+
+.ex4 .b{
+    background-color: green;  
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+}
+
+.ex4 .c{
+    background-color: blue;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+}
+.ex4 .d{
+    background-color: yellow;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom:-150px;
+}
+
+.ex4 .e{
+    background-color: pink;
+    position: absolute;
+    width:100px;
+    height:100px;
+    left: calc(50% - 50px);
+    top:calc(50% - 50px);
+}
+
+
+.ex5{
+    position: relative;
+}
+
+.ex5 div{
+    width: 100px;
+    height: 100px;
+    position: absolute;    
+}
+
+.ex5 .a{
+    background-color: red;
+    left: -100px;
+    top: -100px;
+    z-index: 1;
+}
+
+.ex5 .b{
+    background-color: green;  
+    top: -50px;
+    left: -50px;
+}
+
+.ex5 .c{
+    background-color: blue;
+    z-index: 1;
+}
+
+.ex5 .d{
+    background-color: yellow;
+    left: 50px;
+    top: 50px;
+}
+.ex5 .e{
+     background-color: pink;
+     left: 100px;
+     top:100px;  
+     z-index: 1;  
+}
+
+
+.ex6{
+    display:flex;
+}
+
+.ex6>div{
+    flex: 1;
+}
+
+.ex6 .a{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ex6 .c{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ex6 .b{
+    position: relative;
+}
+
+.ex6 .d,
+.ex6 .e
+{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    bottom: 0px;
+}
+
+.ex6 .d{left:0}
+.ex6 .e{right: 0;}
+

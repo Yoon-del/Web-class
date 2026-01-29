@@ -4,6 +4,9 @@ html{
     font-weight: 400;
     font-size: 20px;
 }
+header{
+    border-bottom: 2px solid red;
+}
 
 .common-fram{
     border: 1px solid red;  
