@@ -1,0 +1,111 @@
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.common-fram{
+    border: 1px solid red;  
+    width: 1600px;   
+    margin: 0 auto;   
+  }
+
+header .common-fram{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gnb{
+    border: 1px solid blue;
+    display: flex;
+    height: 70px;
+}
+
+.gnb li{
+    /* border: 1px solid blue; */
+    font-size: 18px;    
+}
+
+.gnb a{
+    border: 1px solid gold;
+    display: flex;  
+    padding: 0 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.gnb01{
+    border: 1px solid green;
+    display: flex;
+    height: 30px;
+    justify-content: flex-end; 
+}
+
+.gnb01 li{
+    /* border: 1px solid blue; */
+    font-size: 16px;
+
+}
+.gnb01 a{
+    /* border:1px solid orange; */
+    display:flex;    
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner{
+    background: url(../img/banner.jpg);
+    height: 963px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.banner h1{
+    width: 1600px;
+    font-weight: 400;
+    font-size: 7rem;
+    text-align: left;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.common-fram02{
+    border: 1px solid red;  
+    width: 1600px;   
+    margin: 0 auto;     
+}
+
+.common-fram02 h2{
+   font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.common-fram02 p{
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.common-fram02 img{
+    width: 1600px;
+    height: 441px;
+    object-fit: cover;
+}
+
