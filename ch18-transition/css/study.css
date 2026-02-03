@@ -39,6 +39,7 @@
     opacity: 0;
     transition: all 1s ease 0s;
 }
+
 .box:hover .b{
     opacity: 1;
 }

@@ -1,0 +1,132 @@
+.box{
+    border: 5px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    transition: all 1s ease 0s;
+}
+/* 이동 */
+.a{
+    background-color: red;
+}
+
+.a:hover{
+    transform: translateX(-50%);
+}
+
+.b{
+    background-color: blue;
+}
+
+.b:hover{
+    transform: translateY(-50%);
+}
+
+.c{
+    background-color: orange;
+}
+
+.c:hover{
+    transform: 
+    translateY(-100px)
+    translateX(100px)
+}
+
+.parent{
+    background-color: #eee;
+    height: 700px;
+    perspective: 1000px;  
+    perspective-origin: 50% 50%;
+}
+
+/* 원근감 */
+.d{
+    background-color: green;
+    transform-style: preserve-3d;
+
+}
+.parent:hover .d{
+    transform: translateZ(500px);
+}
+
+/* 회전 */
+.e{
+    background-color: coral;
+    transform-origin: 50% 50%;
+}
+.e:hover{
+    transform: rotate(360deg);
+}
+
+/* 회전과 입체 효과 */
+.f{
+    background-color: purple;
+ }
+ .f:hover{
+    transform: rotateX(180deg);
+ }
+    
+.g{
+    background-color: salmon;
+ }
+ .g:hover{
+    transform: rotateY(180deg);
+ }
+
+ .h{
+    background-color: darkcyan;
+ }
+.h:hover{
+    transform: scaleX(200%);
+}
+
+ .i{
+    background-color: chocolate;
+ }
+
+.i:hover{
+    transform: scaleY(2);
+}
+
+.j{
+    background-color: hotpink;
+ }
+ .j:hover{
+    transform: scale(0.7); 
+    /* 여기에서 0.7은 세로 가로 비율을 유지한 상태로 30%줄어서 결국 70%의 크기로 된다. */
+ }
+
+ /* 기울기 */
+.k{
+    background-color: gold;
+ }
+ .k:hover{
+    transform: skewX(-30deg);
+ }
+
+ .l{
+    background-color: violet;
+ }
+ .l:hover{
+    transform: skewY(-30deg);
+ }
+
+.banner{
+    height: 600px;
+    background-color: pink;
+    position: relative;
+}
+.banner div{
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    /* transform:  */
+    /* translateX(-50%)
+    translateY(-50%); */
+    transform: translate(-50%,-50%);
+    top: 50%;    
+}
+
+.banner h1{
+    margin-bottom: 20px;
+}

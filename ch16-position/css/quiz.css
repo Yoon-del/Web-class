@@ -8,14 +8,25 @@ padding: 0;}
     margin: 500px auto;
 }
 
-.a{ background-color: red;}
-.b{   background-color: green; }
-.c{background-color: blue;}
-.d{background-color: yellow;}
-.e{background-color: pink;}
+.a{ 
+    background-color: red;
+    transition: all 0.1s ease 0s;}
+.b{ 
+    background-color: green; 
+    transition: all 1s ease 0s;}
+.c{
+    background-color: blue;
+    transition: all 1s ease 0s;}
+.d{
+    background-color: yellow;
+    transition: all 1s ease 0s;}
+.e{
+    background-color: pink;
+    transition: all 1s ease 0s;}
 
 .ex1{
     position: relative;
+    overflow: hidden;
 }
 
 .ex1>div{
@@ -31,10 +42,20 @@ padding: 0;}
     top: 0;
 }
 
+.ex1:hover .a{
+    left: -100px;
+    top: -100px;
+}
+
 .ex1 .b{
     background-color: green;    
     left: 0;
     bottom: 0;
+}
+
+.ex1:hover .b{
+    left: -100px;
+    bottom: -100px;
 }
 
 .ex1 .c{
@@ -43,11 +64,19 @@ padding: 0;}
     top:calc(50% - 50px);   
 }
 
+.ex1:hover .c{
+    left: calc(50% - 50px);
+    top: -100px;   
+}
+
 .ex1 .d{
     background-color: yellow;
     right: 0;
     top: 0;
-
+}
+.ex1:hover .d{
+    right: -100px;
+    top: -100px;
 }
 .ex1 .e{
     background-color: pink;
@@ -55,9 +84,15 @@ padding: 0;}
     bottom: 0;
 }
 
+.ex1:hover .e{
+    right: -100px;
+    bottom: -100px;
+}
+
 
 .ex2{
     position: relative;
+    overflow: hidden;
 }
 
 .ex2>div{
@@ -73,10 +108,20 @@ padding: 0;}
     left: -100px;
 }
 
+.ex2:hover .a{
+    top: 0;
+    left: 0;
+}
+
 .ex2 .b{
     background-color: green;    
     left:-100px;
     bottom: -100px;
+}
+
+.ex2:hover .b{
+    left: 0;
+    bottom: 0;
 }
 
 .ex2 .c{
@@ -85,16 +130,29 @@ padding: 0;}
     bottom: -100px;
 }
 
+.ex2:hover .c{
+    left: calc(50% - 50px);
+    bottom: calc(50% - 50px);
+}
+
 .ex2 .d{
     background-color: yellow;
     right:-100px;
     top: -100px;
-
+}
+.ex2:hover .d{
+    right: 0;
+    top: 0;
 }
 .ex2 .e{
     background-color: pink;
     right: -100px;
     bottom: -100px;
+}
+
+.ex2:hover .e{
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -114,9 +172,18 @@ padding: 0;}
     top:-100%;
 }
 
+.ex3:hover .a{
+    top: 0;
+}
+
 .ex3 .b{
     background-color: green;    
     bottom: -100%;
+    left: 20%;
+}
+
+.ex3:hover .b{
+    bottom: 0;
     left: 20%;
 }
 
@@ -126,16 +193,31 @@ padding: 0;}
     top: -100%;
 }
 
+.ex3:hover .c{
+    left: 40%;
+    top: 0;
+}
+
 .ex3 .d{
     background-color: yellow;
     bottom: -100%;
     left: 60%;
-
 }
+
+.ex3:hover .d{
+    bottom: 0;
+    left: 60%;
+}
+
 .ex3 .e{
     background-color: pink;
     left: 80%;
     top:-100%;
+}
+
+.ex3:hover .e{
+    left: 80%;
+    top: 0;
 }
 
 
@@ -158,6 +240,10 @@ padding: 0;}
     position: absolute;
 }
 
+.ex4:hover .a{
+    top: 0;
+}
+
 
 .ex4 .b{
     background-color: green;  
@@ -176,6 +262,7 @@ padding: 0;}
     top: 0;
     right: 0;
 }
+
 .ex4 .d{
     background-color: yellow;
     position: absolute;

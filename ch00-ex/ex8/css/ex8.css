@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0;}
+.stp1{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+header{
+    border: 1px solid forestgreen;
+    margin: 0px auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+}
+
+nav{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+}
+
+nav .gnb{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 66px;
+}
+
+.gnb .gnb-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+nav .gnb .gnb-title>a{
+    /* border: 1px solid purple; */
+    display: flex;
+    flex:1;
+    height: 100px;
+    align-items: center;
+
+}
+
+nav .gnb .gnb-title .subtitle {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+nav .gnb .gnb-title .subtitle>li{
+    border: 1px solid #000;
+    padding-top: 20px;
+}
+
+nav .gnb .gnb-title .subtitle{
+    opacity: 0;
+    /* display: none; */
+    transition: all 0.3s ease 0s
+
+}
+nav .gnb .gnb-title .subtitle:hover{
+    /* opacity: 1; */
+}
+
+.banner{
+    height: 800px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% /cover;
+}
+
+

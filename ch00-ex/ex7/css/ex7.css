@@ -10,13 +10,10 @@ header{
     width: 100%;
 }
 
-.common-fram{
+header .common-fram{
     border: 1px solid red;  
     width: 1600px;   
     margin: 0 auto;   
-  }
-
-header .common-fram{
     display: flex;
     justify-content: space-between;
 }
@@ -26,6 +23,7 @@ header .common-fram{
     border: 1px solid blue;
     display: flex;
     height: 70px;
+    align-items: center;
 }
 
 .gnb li{
@@ -47,6 +45,7 @@ header .common-fram{
     display: flex;
     height: 30px;
     justify-content: flex-end; 
+    align-items: center;
 }
 
 .gnb01 li{
