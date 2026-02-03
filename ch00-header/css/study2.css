@@ -11,14 +11,14 @@ a{
     text-decoration: inherit;
 }
 
-header{
+/* header{
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
     max-height: 80px;
     overflow: hidden;
     transition: all 0.6s ease 0s;
-}
+} */
 .gnb{
     width: 300px;
 }

@@ -12,20 +12,22 @@ html {
 }
 
 header {
-    max-height: 100px;  
+    height: 100px;  
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 1;    
     background-color: white;
-    overflow: hidden;
-    transition: height 0.3s ease; 
+    /* overflow: hidden; */
 }
 
-header:hover {
-    max-height: 266px; 
+img{
+    border: 1px solid blue;
+    height: 100px;
+    width: 100px;
 }
+
 
 nav{
     border: 1px solid red;
@@ -39,21 +41,30 @@ nav{
 nav .gnb {
     display: flex;
     justify-content: space-between;
-    gap:66px;
+
 }
 
 .gnb .gnb-title {
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
+    max-height: 100px;
+    overflow: hidden;
+    background-color: pink;
 }
 
+.gnb .gnb-title:hover {
+    max-height: 500px;
+}
 
-nav .gnb .gnb-title>a{
+.gnb .gnb-title>a {
     display: flex;
     height: 100px;
+    width: 200px;
+    justify-content: flex-start;
     align-items: center;
 }
+
 
 /* 서브메뉴*/
 nav .gnb .gnb-title .subtitle {
@@ -86,3 +97,4 @@ nav .gnb .gnb-title .subtitle > li a {
     text-transform: uppercase;
     color:#FFFFFF;
 }
+
