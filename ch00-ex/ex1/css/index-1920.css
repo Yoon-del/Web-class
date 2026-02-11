@@ -1,0 +1,62 @@
+@media (max-width:1920px){
+
+    html{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: var(--base-pc);
+    }
+
+
+    .inner-frame{
+        /* border: 1px solid red; */
+        width:1440px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .inner-frame h1{
+        /* border: 1px solid blue; */
+        font-weight:900;
+        font-size:2.5rem;
+        margin-top: 3.75rem;
+        padding:1rem 0;
+        text-transform: uppercase;
+    }
+
+    .desc{
+        /* border: 1px solid red; */
+        
+        line-height: 140%;
+        margin-bottom: 5rem;
+    }
+
+    .banner{
+        /* border: 1px solid blue; */
+        background: url(../img/banner.jpg) no-repeat 50% 50% /cover;
+        height:441px;
+        margin-bottom: 5rem;
+    }
+
+
+    .inner-frame h2{
+        /* border: 1px solid red; */
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 100%;
+        text-transform: uppercase;
+        padding: .5rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .values li{
+        /* border: 1px solid blue; */
+        margin-bottom: .5rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .values li:last-of-type{
+        margin-bottom: 0;
+    }
+
+}

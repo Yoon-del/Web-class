@@ -1,0 +1,20 @@
+@media (min-width:1024px){
+    /* 화면너비가 최소 1024픽셀 이상일 때 적용되는 스타일 */
+    .container{
+        background-color: red;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    /* 띄어쓰기를 주의(media 뒤와 and 사이에 꼭 띄어쓰기를 해야 합니다.) */
+    .container{
+        background-color: blue;
+    }
+}
+
+@media (max-width:767px){
+    /* 띄어쓰기를 주의(media 뒤와 and 사이에 꼭 띄어쓰기를 해야 합니다.) */
+    .container{
+        background-color: green;
+    }
+}

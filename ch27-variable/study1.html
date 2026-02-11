@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수-값이 저장되는 공간(메모리)</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <p>변수는 변할 가능성이 있는 수</p>
+    <script>
+        let a;
+        // a라는 메모리가 만들어진것-> a라는 변수를 선언(생성)한다.
+        a = 10
+        // 등호는 값이 같다의 의미가 아니라 10을 a에 저장한다 -> a라는 변수 10으로 초기화한다.
+        console.log(a + 10)
+        // ->20이 된다.
+        console.log(a)
+        a=a+10
+        // a 메모리에 오른쪽 계산된 값을 저장한다의 의미
+        // 이전의 a의 값은 지워지고 새롭운 값이 저장됨
+        console.log(a)
+        a+=10
+        // a에 10 더한값을 a에 저장한다.
+        console.log(a)
+
+        let b = 20
+        b-=2
+        // b에서 2를 뺀 값을 b에 저장한다
+         console.log(b)
+
+        let c = "안녕하세요"
+        console.log(c.length)
+        console.log([2])
+        prompt("당신의 이름이 무엇인가요?")
+
+        let name = prompt("당신의 이름이 무엇인가요?")
+        document.write("<h3>"+name+" 안녕!!!</h3>")
+        // ->외우기
+        let age = prompt(name+"님의 나이는 몇 살인가요?")
+        document.write("<p>"+name+" 님의 나이가 "+age+"살이군요. 반갑습니다.</p>")       
+
+        
+    </script>
+
+    <h1>상수</h1>
+    <p>변하지 않은 수</p>
+    <p>전현진 님의 나이가 40살이군요. 반갑습니다.</p>
+    <script>
+        123
+        "정현진"
+        // 문자데이터와 숫자는 모두 상수 이다.
+    </script>
+</body>
+</html>
