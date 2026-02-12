@@ -11,8 +11,14 @@
         <p> 사용자에게 이름과, 국어점수, 수학점수, 사회점수를 각각 물어보고 평균값을 계산하여, 다음과 같이 홈페이지에 나타날 수 있도록 소스코드를 작성하세요.(p태그로 마크업이 될 수 있게 할 것, 평균점수는 소수점 둘째자리 까지)
         답안예시)[정현진님의] 평균점수는 92.33입니다.
         </p>
+        <p>
+            90점 이상이면 1등급
+            80점 이상이면 2등급
+            70점 이상이면 3등급
+            70점 미만이면 4등급
+        </p>
     </div>
-
+    
    <script>
     
     let userName = prompt("이름을 입력하세요:");
@@ -21,10 +27,17 @@
     let soc = Number(prompt("사회 점수를 입력하세요:"));
     let eng = Number(prompt("영어 점수를 입력하세요:"));
     let average = Number(kor+math+soc+eng)/4;  
-    let result = average.toFixed(2);    
-    document.write("<p>"+userName+" 님의 평균점수는["+result+"]입니다.</p>")
-    console.log(average)
+    let result = average.toFixed(2);   
+    let resultNumber = average
+
+    let grade = resultNumber>=90?"1등급" : resultNumber>=80?"2등급" : resultNumber>=70?"3등급" : "4등급"
     
+   
+
+    // document.write("<p>"+userName+" 님의 평균점수는["+result+"]입니다.[+rating+]</p>")
+    // console.log(average)
+
+    document.write(`<p>[${userName}님의] 평균점수는 [${resultNumber}] 점 입니다. [${grad}] </p>`)
    </script> 
 
 </body>

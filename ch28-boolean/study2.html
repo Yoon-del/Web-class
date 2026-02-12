@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <script>
+        10>2 ? "A" : "B" // 조건식이 참일경우 물음표 바로 다음 "A"가 남는다.
+        5<3 ? "가" : "나" //조건식이 거짓일 경우 콜론 뒤의 "나"가 남는다.
+        10!=10?"다":"라" //조건이 거짓, "라"가 남는다.
+        20?"c":"d" //20이라는 수가 있기때문에 참으로 간주되어 "d"가 남는다.
+        !0?"e":"f"//"e"
+        30<20?"A":5==5?"c":"d" //"c"
+        let score =40
+        score>=90?"A":score>=80?"B":score>=70?"c":"d"//"d"
+    </script>
+</body>
+</html>
