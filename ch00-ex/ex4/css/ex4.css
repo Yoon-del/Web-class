@@ -173,6 +173,8 @@ html{
 }
 
 
+
+
 @media (max-width:768px){
     html{
     font-size: var(--base-mo);
@@ -214,10 +216,10 @@ html{
         flex: 1;
         aspect-ratio: 365/150;
         height: 150px;
-        /* line-height: 0%; */
+        line-height: 0%;
     }
 
-    /* .cafe-gal .cafe-gal.type2 {
+    /* .cafe-gal.cafe-gal.type2 {
         grid-template-columns: repeat(1,1fr);
         aspect-ratio: 365/150;
     } */

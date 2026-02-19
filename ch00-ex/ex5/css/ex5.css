@@ -1,3 +1,10 @@
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-wide1:22px
+}
+
 .stp1{
   font-family: "Aboreto", system-ui;
   font-weight: 400;
@@ -122,3 +129,88 @@ html{
 }
 
 
+@media(max-width:3840px){
+    html{ font-size: var(--base-wide1);}
+}
+
+@media(max-width:1920px){
+    html{ font-size: var(--base-pc);}
+}
+
+@media(max-width:1024px){
+    html{ font-size: var(--base-pad);}
+
+    .wrap{
+        width: auto;
+        margin: 0 1rem;
+    }
+
+    .banner {
+        width: auto;
+        height: 600px;
+        margin-bottom: 5rem;
+    }
+
+    .title{
+        width: auto;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .banner h2{
+        width: auto;
+        font-size: 4.5rem;
+    }
+
+}
+
+@media(max-width:768px){
+    html{ font-size: var(--base-mo);}
+
+    .wrap{
+        width: auto;
+        margin: 0 1rem;
+    }
+    .banner {
+        height: 500px;
+    }
+
+    .title{
+        width: auto;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+        .banner h2{
+        width: auto;
+        font-size: 4.5rem;
+        text-align: center;
+        ma
+
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin: 0 1rem;
+    }
+    
+    .gallery > li {
+        width: 100%;
+    }
+
+   .gallery figure {
+    aspect-ratio: 1 / 1; 
+    width: 100%; 
+    /* overflow: hidden; */
+    line-height: 0;
+    margin-bottom: 1rem;
+}
+
+.gallery figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 1.4rem;
+}
+}
