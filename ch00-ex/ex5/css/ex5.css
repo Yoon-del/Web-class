@@ -128,7 +128,9 @@ html{
     text-transform: lowercase;
 }
 
-
+@media(max-width:5120px){
+    html{ font-size: var(--base-wide1);}
+}
 @media(max-width:3840px){
     html{ font-size: var(--base-wide1);}
 }
@@ -142,7 +144,7 @@ html{
 
     .wrap{
         width: auto;
-        margin: 0 1rem;
+        margin: 0 2rem;
     }
 
     .banner {
@@ -159,10 +161,11 @@ html{
 
     .banner h2{
         width: auto;
-        font-size: 4.5rem;
+        font-size: 4.4rem;
     }
-
 }
+
+
 
 @media(max-width:768px){
     html{ font-size: var(--base-mo);}
@@ -171,8 +174,14 @@ html{
         width: auto;
         margin: 0 1rem;
     }
+
     .banner {
+        width: auto;
         height: 500px;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
     }
 
     .title{
@@ -181,17 +190,18 @@ html{
         text-align: center;
     }
 
-        .banner h2{
-        width: auto;
-        font-size: 4.5rem;
-        text-align: center;
-        ma
+
+    .banner h2{
+    width: auto;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 1rem;
 
     }
 
     .gallery {
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 2rem;
         margin: 0 1rem;
     }
     

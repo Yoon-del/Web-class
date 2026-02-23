@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>객체-object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>그리고 각각의 프로퍼티는 :(콜론)을 사용하여 key:vlaue형태로 구성되어있다.</p>
+    <p>여기서  key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체안에 속해있는 변수처럼 활용된다.</p>
+    <script>
+        // {} //객체-object
+        // [] //array 배열
+
+        let person1 = ["정현진","남자",50]
+        //객체의 속성 property프로퍼티 라고 부른다.
+        //콤마로 구분
+        //property프로퍼티는 key : value 로 구성되어있다.
+        //name은 객체 안에 만들어진 변수 이다.
+        //name이라는 변수에 "정현진" 문자데이터가 저장되어 있다.
+        let person2 = {name:"정현진",gender:"남자",age:50}
+        let person3 = {name:"장윤서",gender:"여자",age:27}
+
+        console.log(person1[0] )
+        //person1의 "정현진"을 불러온다. 배열데이터는 저장되는 순서가 중요하다.
+        console.log(person2["name"])
+        console.log(person2.name)
+        //person2의 "정현진"을 불러온다. 
+        // 객체데이터는 저장되는 순서가 중요하지 않다.
+        //객체의 값은 키값으로 접근한다.
+        // person2.name 표현을 많이 사용한다.
+
+        person3.name[1]
+        //person3.name 이 장윤서 이므로 장윤서의 1번째 글자는  "윤"
+        person3.gender.length
+        //여자 문자데이터의 글자 갯수 2
+        person3.gender.length-2? "A" :"B"
+        //0값이므로 flase가 되고 "B"가 남는다.
+
+        
+
+    </script>
+</body>
+</html>
