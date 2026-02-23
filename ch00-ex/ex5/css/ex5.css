@@ -139,6 +139,13 @@ html{
     html{ font-size: var(--base-pc);}
 }
 
+@media(max-width:1600px){
+    .wrap{
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+
 @media(max-width:1024px){
     html{ font-size: var(--base-pad);}
 
