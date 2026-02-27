@@ -1,3 +1,12 @@
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-wide1:22px;
+}
+
+/* 커스텀 태그를 사용할 경우 기본적으로 block 처리를 해주는 것이 안전합니다 */
+headermobile { display: none; }
 
 html{
     font-family: 'Pretendard', sans-serif;
@@ -42,7 +51,7 @@ header .common-fram{
 .banner{
     border: 1px solid red;
     height: 700px;
-    background: url(../img/banner.jpg) no-repeat 50% 50% /cover;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -54,4 +63,63 @@ header .common-fram{
     line-height: 100%;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo a{
+    display: block;
+    height: 100%;
+}
+
+.logo a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 반응형 미디어 쿼리 (큰 해상도부터 작은 해상도 순서) */
+@media(max-width:5120px){
+    html{ font-size: var(--base-wide1);}
+}
+
+@media(max-width:1920px){
+    html{ font-size: var(--base-pc);}
+}
+
+@media(max-width:1600px){
+    .common-fram {
+        margin: 0 2rem;
+        width: auto;
+    }
+}
+
+@media(max-width:1024px){
+    html{ font-size: var(--base-pad);}
+    .banner { height: 600px; }
+    .banner h1 { font-size: 80px; }
+}
+
+@media(max-width:900px){
+
+    header{ display: none; }
+    headermobile{ display: block; }
+
+    headermobile .common-fram{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+@media(max-width:768px){
+    
+    html{ font-size: var(--base-mo);}
+    .common-fram {
+        margin: 0 1rem;
+        width: auto;
+    }
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 메서드 표현</title>
+</head>
+<body>
+    <script>
+    let ac = {
+        bodycolor: "흰색",
+        width: 60,
+        height: 200,
+        weight: 70,
+        brand: "carrier",
+        powerOn: function() {
+            alert("전원이 켜졌습니다");
+        },
+        powerOff: function() {
+            alert("전원이 꺼졌습니다.");
+        },
+        temperature: 25,
+        temperatureUp: function() {
+            alert("온도를 1도 올립니다.");
+            this.temperature += 1;
+        },
+        temperatureDw: function() {
+            alert("온도를 1도 내립니다.");
+            this.temperature -= 1;
+        }
+    };
+
+    // 객체 속성 접근
+    console.log(ac.bodycolor);
+    console.log(ac["bodycolor"]);
+    console.log(ac.weight);
+
+    // 메서드 실행
+    ac.powerOn();
+    
+    alert("현재 온도: " + ac.temperature); // 25
+    ac.temperatureUp(); // 26으로 변경
+    alert("현재 온도: " + ac.temperature); // 26
+    
+    ac.temperatureDw(); // 25
+    ac.temperatureDw(); // 24
+    ac.temperatureDw(); // 23
+    
+    // 마지막 확인: ()를 빼면 함수 소스 코드가 출력되므로 변수를 직접 확인합니다.
+    alert("최종 온도: " + ac.temperature); 
+</script>
+       
+</body>
+</html>

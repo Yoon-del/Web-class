@@ -141,8 +141,8 @@ html{
 
 @media(max-width:1600px){
     .wrap{
-        width: auto;
-        margin: 0 2rem;
+            width: auto;
+            margin: 0 2rem;
     }
 }
 

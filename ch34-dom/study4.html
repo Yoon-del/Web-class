@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <link rel="stylesheet" href="./css/study4.css">
+</head>
+
+<body>
+    <aside class="font-controler">
+        <ul>
+            <li id="view-font-size"><span class="chip">20px</span></li>
+            <li id="btn-small-font" class="button-type">글씨-</li>
+            <li id="btn-big-font" class="button-type">글씨+</li>
+            <li class="button-type">기본글씨</li>
+        </ul>
+    </aside>
+
+
+
+    <h1>태그에 이벤트 등록하기</h1>
+    <p>자바스크립트로 태그를 선택하여 이벤트를 등록할 수 있다.</p>
+    <span id="btn1" class="button-type">인사시키기</span>
+    <span id="btn2" class="button-type">배경색 넣기</span>
+    <span id="btn3" class="button-type">배경색 제거</span>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        Error quam officia voluptas cupiditate recusandae in voluptate facilis dolorem necessitatibus nemo perferendis nulla ipsam ut illo aliquam, ad rem maiores animi?
+    </div>
+
+    <script>
+    // 1. 공통 변수 선언 (코드 상단에 한 번만!)
+    let basicFontSize = 20;
+    const minFontSize = 14;
+    const maxFontSize = 26;
+    const chip = document.querySelector(".chip")
+    
+    const html = document.querySelector("html");
+    const box = document.querySelector(".box");
+
+    // 2. 배경색 관련 이벤트
+    let btn1 = document.querySelector("#btn1");
+    btn1.addEventListener("click", function() {
+        alert("안녕하세요");
+    });
+
+    let btn2 = document.querySelector("#btn2"); 
+    btn2.addEventListener("click", function() {
+        box.style.backgroundColor = "lime";
+    });
+
+    const btn3 = document.querySelector("#btn3");
+    btn3.addEventListener("click", function() {
+        box.style.backgroundColor = "initial";
+    });
+
+    // 3. 글씨 작게 (-) 이벤트
+    const btnSmallFont = document.querySelector("#btn-small-font");
+    btnSmallFont.addEventListener("click", function(){
+        // 현재 크기가 최소(14)보다 작거나 같으면 경고창 띄우고 중단
+        if(basicFontSize <= minFontSize){
+            alert(minFontSize + "픽셀 보다 작게 글씨를 줄일 수 없습니다.");
+            return; // 함수 종료
+        }
+        
+        // 위 조건을 통과하면 숫자 줄이고 적용
+        basicFontSize -= 1;
+        chip.innerHTML = `${basicFontSize}px`;
+        html.style.fontSize = `${basicFontSize}px`;
+    });
+
+    // 4. 글씨 크게 (+) 이벤트
+    const btnBigFont = document.querySelector("#btn-big-font");
+    btnBigFont.addEventListener("click", function(){
+        // 현재 크기가 최대(26)보다 크거나 같으면 경고창 띄우고 중단
+        if(basicFontSize >= maxFontSize){
+            alert(maxFontSize + "픽셀 보다 크게 글씨를 키울 수 없습니다.");
+            return; // 함수 종료
+        }
+        
+        // 위 조건을 통과하면 숫자 키우고 적용
+        basicFontSize += 1;
+        chip.innerHTML = `${basicFontSize}px`;
+        html.style.fontSize = `${basicFontSize}px`;
+    });
+
+</script>
+</body>
+</html>
